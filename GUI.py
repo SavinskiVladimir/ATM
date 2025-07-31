@@ -608,4 +608,5 @@ def main():
 
     create_main_window(window)
 
+    window.protocol("WM_DELETE_WINDOW", lambda: stop(window))
     window.mainloop()
